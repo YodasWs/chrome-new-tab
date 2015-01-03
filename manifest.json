@@ -1,0 +1,14 @@
+{
+"manifest_version":2,
+"name":"Bookmarks",
+"version":"0.1",
+"permissions":[
+	"contextMenus",
+	"bookmarks"
+],
+"chrome_url_overrides":{
+	"newtab":"bookmarks.html"
+},
+"browser_action":{
+}
+}

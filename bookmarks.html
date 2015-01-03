@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Bookmarks</title>
+<script src="zepto.min.js"></script>
+<script src="zepto-fx.js" async></script>
+<script src="bookmarks.js" defer></script>
+<style>
+* { box-sizing: border-box; padding: 0; margin: 0; }
+a:link, a:visited { text-decoration: none; color: #307cf0; }
+a:active, a:hover { text-decoration: underline; }
+ul {
+	list-style: none;
+}
+body > main {
+	display: -webkit-flex;
+	-webkit-flex-flow: column nowrap;
+	-webkit-justify-content: flex-start;
+	-webkit-align-items: stretch;
+}
+body > main > section {
+	border: 1px solid red;
+	margin: 0 1em;
+}
+body > main section {
+	display: -webkit-flex;
+	-webkit-flex-flow: row wrap;
+	-webkit-justify-content: flex-start;
+	-webkit-align-items: center;
+}
+body > main > section a {
+	display: block;
+	text-align: center;
+	border: 1px solid black;
+	min-width: 100px;
+	padding: 0 5px;
+	line-height: 3em;
+}
+body > main > section section {
+	-webkit-flex: 1 1 auto;
+	width: 100%;
+	border: 1px solid black;
+	min-width: 100px;
+	min-height: 3em;
+}
+body > main > section section a {
+/*
+	-webkit-flex: 1 1 auto;
+/**/
+}
+body > main > section a > img {
+	display: inline-block;
+	margin-right: 2px;
+}
+h1 { width: 100%; }
+</style>
+</head>
+<body>
+<h1>Bookmarks</h1>
+<a href="chrome://extensions">Extensions</a>
+</body>
+</html>
